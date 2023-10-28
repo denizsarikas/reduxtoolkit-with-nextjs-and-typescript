@@ -12,14 +12,14 @@ type AuthState = {
 };
 
 //as yerine : araştır
-const initialState = {
+const initialState: InitialState = {
   value: {
     isAuth: false,
     username: "",
     uid: "",
     isModerator: false,
-  } as AuthState,
-} as InitialState;
+  },
+};
 
 export const auth = createSlice({
   name: "auth",
